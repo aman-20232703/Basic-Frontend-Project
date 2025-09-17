@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - National Park</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
+    <!-- <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2ecc71, #145a32);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #145a32;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #27ae60;
+        }
+
+        .profile-header .info {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .info h3 {
+            margin: 0;
+            color: #145a32;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h4 {
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .section table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .btn {
+            background: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #145a32;
+        }
+
+        .actions {
+            text-align: right;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="container">
+        <h2>🌿 User Profile</h2>
+        <div class="profile-header">
+            <img src="PHOTO.jpg" alt="Profile Picture">
+            <div class="info">
+                <h3 id="username">Aman Kumar</h3>
+                <p>Email: <span id="email">NationalPark@gmail.com</span></p>
+                <p>Contact: <span id="phone">+91 9262872022</span></p>
+            </div>
+            <div class="actions">
+                <button class="btn" onclick="editProfile()">Edit Profile</button>
+                <button class="btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h4>👤 Personal Details</h4>
+            <table>
+                <tr>
+                    <td><b>ID Proof:</b></td>
+                    <td id="idproof">Aadhar - 1234 5678 9012</td>
+                </tr>
+                <tr>
+                    <td><b>Address:</b></td>
+                    <td id="address">Govindpuri Gali no-7, Delhi</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h4>🎟 Booking Details</h4>
+            <table>
+                <tr>
+                    <td><b>Park Name:</b></td>
+                    <td id="park">Jim Corbett</td>
+                </tr>
+                <tr>
+                    <td><b>Date:</b></td>
+                    <td id="date">25-Aug-2025</td>
+                </tr>
+                <tr>
+                    <td><b>Time:</b></td>
+                    <td id="time">Morning Safari (6:00 AM)</td>
+                </tr>
+                <tr>
+                    <td><b>Entry Gate:</b></td>
+                    <td id="gate">Main Gate</td>
+                </tr>
+                <tr>
+                    <td><b>Tickets:</b></td>
+                    <td id="tickets">3</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h4>⚙ Account Settings</h4>
+            <button class="btn" onclick="changePassword()">Change Password</button>
+        </div>
+    </div>
+
+    <!-- <script>
+        function editProfile() {
+            alert("Edit Profile feature coming soon!");
+        }
+        function changePassword() {
+            alert("Change Password feature coming soon!");
+        }
+        function logout() {
+            alert("You have been logged out!");
+            window.location.href = "login.html"; // redirect to login
+        }
+    </script> -->
+</body>
+
+</html>
